@@ -16,7 +16,7 @@ TRp=[Dx(i) for i in x]
 
 plt.figure(figsize=(16, 9))
 plt.title("Решение", fontsize=14)
-plt.plot(x,data1[:,0],label = 'Неявный метод для y')
+plt.plot(x,data1[0:-1,0],label = 'Неявный метод для y')
 plt.plot(x,YY,label='Точное решение для y')
 
 
@@ -30,7 +30,7 @@ plt.show()
 
 plt.figure(figsize=(16, 9))
 plt.title("Производная", fontsize=14)
-plt.plot(x,data1[:,1],label = "Неявный метод для y' ")
+plt.plot(x,data1[0:-1,1],label = "Неявный метод для y' ")
 plt.plot(x,TRp,label="Точное решение для y' ")
 
 plt.legend()
