@@ -61,7 +61,7 @@ int main(){
 //		Y=(x+3)*exp(-x)+((6*sqrt(7)*sin(sqrt(7)*x/8.))/7.-2*cos(sqrt(7)*x/8.))/pow(exp(x),5./8.);
 		Y=(x+3)*exp(-x)+(C1*sin(sqrt(7)*x/8.)+C2*cos(sqrt(7)*x/8.))/pow(exp(x),5./8.);
 		Y1=-(x+3)*exp(-x)-5*(C1*sin(sqrt(7)*x/8.)+C2*cos(sqrt(7)*x/8.))/(8*pow(exp(x),5./8.))+
-		(sqrt(7)*C1*cos(sqrt(7)*x/8.)/8+C2*sqrt(7)*sin(sqrt(7)*x/8.)/8.)/(pow(exp(x),5./8.))+exp(-x);
+		(sqrt(7)*C1*cos(sqrt(7)*x/8.)/8-C2*sqrt(7)*sin(sqrt(7)*x/8.)/8.)/(pow(exp(x),5./8.))+exp(-x);
 		resh<<x<<" "<<Y<<" "<<Y1<<endl;	
 	}
 	return 0;
